@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#0F172A"
+    android:padding="16dp">
+
+    <!-- Barra de Pesquisa e Seleção -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="12dp">
+
+        <EditText
+            android:id="@+id/editSearch"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Pesquisar histórico..."
+            android:textColor="#F8FAFC"
+            android:textColorHint="#64748B"
+            android:textSize="14sp"
+            android:backgroundTint="#38BDF8"
+            android:padding="8dp" />
+
+    </LinearLayout>
+
+    <!-- Barra de Ações de Seleção (Oculta por defeito) -->
+    <LinearLayout
+        android:id="@+id/selectionBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="end"
+        android:visibility="gone"
+        android:layout_marginBottom="8dp">
+
+        <Button
+            android:id="@+id/buttonSelectAll"
+            style="@style/Widget.Material3.Button.TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Todos"
+            android:textColor="#94A3B8" />
+
+        <Button
+            android:id="@+id/buttonShare"
+            style="@style/Widget.Material3.Button.TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Compartilhar"
+            android:textColor="#38BDF8" />
+
+        <Button
+            android:id="@+id/buttonCancel"
+            style="@style/Widget.Material3.Button.TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancelar"
+            android:textColor="#94A3B8" />
+
+        <Button
+            android:id="@+id/buttonDelete"
+            style="@style/Widget.Material3.Button.TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Eliminar"
+            android:textColor="#EF4444" />
+    </LinearLayout>
+
+    <!-- Informação de Armazenamento -->
+    <TextView
+        android:id="@+id/textStorage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Armazenamento utilizado: 0 KB"
+        android:textColor="#94A3B8"
+        android:textSize="12sp"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Lista de Histórico -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerHistory"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <!-- Mensagem de Vazio -->
+    <TextView
+        android:id="@+id/textEmpty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nenhum histórico encontrado."
+        android:textColor="#64748B"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:visibility="gone"
+        android:layout_marginTop="50dp" />
+
+</LinearLayout>

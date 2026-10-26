@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+    <external-files-path name="caddoc" path="CadDocBridge_Files/" />
+    <!-- Fallback caso o armazenamento externo esteja indisponível -->
+    <files-path name="caddoc_internal" path="CadDocBridge_Files/" />
+</paths>

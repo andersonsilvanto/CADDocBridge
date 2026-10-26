@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#121212">
+
+    <!-- Pré-visualização da Imagem / Documento -->
+    <ImageView
+        android:id="@+id/imageViewPreview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scaleType="fitCenter"
+        android:background="#1E1E1E"
+        android:contentDescription="Pré-visualização do documento" />
+
+    <!-- Área de Resultados do OCR -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="12dp"
+        android:background="#1E1E1E"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/textOcrResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="O texto extraído aparecerá aqui..."
+            android:textColor="#E0E0E0"
+            android:textSize="14sp" />
+    </ScrollView>
+
+    <!-- Botões de Ação (OpenCV & OCR) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="12dp">
+
+        <Button
+            android:id="@+id/buttonOpenCvFilter"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginEnd="6dp"
+            android:text="Aplicar Filtro OpenCV" />
+
+        <Button
+            android:id="@+id/buttonRunOcr"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="6dp"
+            android:text="Executar OCR" />
+
+    </LinearLayout>
+
+</LinearLayout>

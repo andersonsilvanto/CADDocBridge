@@ -1,11 +1,10 @@
+![Tela inicial do CadDocBridge](assets/caddocbridge2.png)
+
 # CAD & Doc Bridge
 
 Aplicativo Android, escrito em **Java**, que converte arquivos de engenharia e documentos direto no celular, sem internet e sem enviar nada para servidores. Ele lê desenhos **DXF** (CAD) e gera **PDF** ou **PNG**, converte imagens entre formatos e usa a câmera para escanear documentos.
 
-> Projeto de portfólio desenvolvido no Android Studio, com apoio de IA (Claude, da Anthropic) para revisão de código e resolução de problemas. As decisões, os testes e a integração no projeto foram feitos por mim.
-
-<!-- Adicione aqui capturas de tela do app em uma pasta /docs/screenshots -->
-<!-- ![Tela inicial](docs/screenshots/tela-inicial.png) -->
+> Projeto de portfólio desenvolvido no Android Studio, com apoio de IA (Claude, da Anthropic) para revisão de código e resolução de problemas. As decisões, os testes e a integração no projeto foram feitos por mim.->
 
 ---
 
